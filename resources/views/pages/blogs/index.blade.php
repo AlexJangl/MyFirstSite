@@ -6,7 +6,13 @@
         </div>
     </div>
     <div class="blog section bg-grey">
-        @include('_layouts.blog')
+        <div class="container">
+            <div class="row">
+                @foreach($blogs as $blog)
+                    @include('pages.blogs._blog_card')
+                @endforeach
+            </div>
+        </div>
         <div class="pagination">
             <ul>
                 <li><a href="" class="active">1</a></li>

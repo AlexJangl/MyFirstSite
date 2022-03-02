@@ -2,9 +2,8 @@
 @section('content')
     <div class="header-title">
         <div class="container">
-            <h3>About us</h3>
+            <h3>Pricing</h3>
         </div>
     </div>
-    @include('_layouts.about')
-    @include('_layouts.features')
+    @include('pages.pricing.pricing')
 @endsection

@@ -14,7 +14,7 @@
                 @foreach($features as $feature)
                     <div class="content" @if($loop->last) class = "pb-0" @endif>
                         <div class="icon">
-                            <i class = {{$feature['icon']}}></i>
+                            <i class = "{{$feature['icon']}}"></i>
                         </div>
                         <div class="content-text">
                             <h5>{{$feature['header']}} </h5>
