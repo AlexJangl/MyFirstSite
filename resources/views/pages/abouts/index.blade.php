@@ -5,6 +5,6 @@
             <h3>About us</h3>
         </div>
     </div>
-    @include('pages.about.about')
-    @include('pages.about.features')
+    @include('pages.abouts.about')
+    @include('pages.abouts.features')
 @endsection

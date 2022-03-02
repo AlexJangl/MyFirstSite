@@ -14,16 +14,16 @@ Table of Content:
 - button
 - navbar
 - header title
-- about us
+- abouts us
 - home intro
 - section title
 - services
 - our works
-- pricing
+- pricings
 - features
-- latest blog
-- blog
-- blog single
+- latest blogs
+- blogs
+- blogs single
 - pagination
 - contact
 - footer
@@ -224,7 +224,7 @@ p {
     font-weight: 600;
 }
 
-/* about us */
+/* abouts us */
 .about {
     position: relative;
 }
@@ -485,7 +485,7 @@ p {
     transition: all .3s ease;
 }
 
-/* pricing */
+/* pricings */
 .pricing .content {
     border-radius: 6px;
     padding: 30px;
@@ -566,7 +566,7 @@ p {
     overflow: hidden;
 }
 
-/* latest blog */
+/* latest blogs */
 .latest-blog {
     padding-top: 120px;
 }
@@ -601,7 +601,7 @@ p {
     transition: .5s ease-out;
 }
 
-/* blog */
+/* blogs */
 .blog .content {
     border-radius: 6px;
     margin-bottom: 30px;
@@ -662,7 +662,7 @@ p {
     border-color: #f7a30a;
 }
 
-/* blog single */
+/* blogs single */
 .blog-single .content h5 {
     font-size: 24px;
     line-height: 34px;

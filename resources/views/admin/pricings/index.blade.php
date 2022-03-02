@@ -10,27 +10,24 @@
                     <div class="card card-outline card-primary">
                         <div class="card-header">
 
-                            <span class="font-weight-bold">Сервисы</span>
+                            <span class="font-weight-bold">Прайсы</span>
 
                             <div class="card-tools">
-                                <a href="{{ route('service.create') }}" class="btn btn-outline-primary text-primary mr-2">
+                                <a href="{{ route('pricings.create') }}" class="btn btn-outline-primary text-primary mr-2">
                                     Добавить
-                                    {{--                                <i class="far fa-plus-square"></i>--}}
                                 </a>
-                                {{--                                @include('_layouts._tools')--}}
                             </div>
                         </div>
                         <div class="card-body">
-                            {{--                            @include('_include._table_columns_select')--}}
-                                                        <table id="example" class="table table-bordered table-striped">
-                            {{--                                @include('_include._table_thead')--}}
-                                                            <tbody>
-                                                                @foreach($services as $item)
-                                                                    @include('admin.services._index_table')
-                                                                @endforeach
-                                                            </tbody>
-                            {{--                                @include('_include._table_tfoot')--}}
-                                                        </table>
+
+                            <table id="example" class="table table-bordered table-striped">
+
+                                <tbody>
+                                    @foreach($pricings as $item)
+                                        @include('admin.pricings._index_table')
+                                    @endforeach
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -40,6 +37,5 @@
 @endsection
 
 @push('scripts')
-    {{--    @include('_layouts._table_properties')--}}
 @endpush
 

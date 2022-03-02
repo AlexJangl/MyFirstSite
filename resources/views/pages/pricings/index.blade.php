@@ -5,5 +5,5 @@
             <h3>Pricing</h3>
         </div>
     </div>
-    @include('pages.pricing.pricing')
+    @include('pages.pricings._pricing')
 @endsection

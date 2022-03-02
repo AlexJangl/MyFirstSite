@@ -2,29 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
     public function index()
     {
-        $services = [
-            [
-                'icon' => 'fa fa-building',
-                'header' => 'Building',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quisquam maxime eos, culpa minus placeat.'
-            ],
-            [
-                'icon' => 'fa fa-dumbbell',
-                'header' => 'Architecture',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quisquam maxime eos, culpa minus placeat.'
-            ],
-            [
-                'icon' => 'fa fa-wrench',
-                'header' => 'Renovation',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quisquam maxime eos, culpa minus placeat.'
-            ],
-        ];
+        $services = Service::oldest()->take(3)->get(['title', 'icon', 'description']);
+
         $works = [
             [
                 'image' => 'images/work1.jpg',
@@ -79,31 +81,16 @@ class HomeController extends Controller
                 'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit Amet perspiciatis fuga repellendus similique quod obcaecati.'
             ],
         ];
-        $blogs = [
-            [
-                'image' => 'images/blog3.jpg',
-                'header' => 'Great results are charming and beautiful',
-                'date' => '03 March 2020',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur explicabo nobis soluta praesentium deserunt magnam voluptatum'
-            ],
-            [
-                'image' => 'images/blog2.jpg',
-                'header' => 'Have a machine that is reliable and fast',
-                'date' => '11 April 2020',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur explicabo nobis soluta praesentium deserunt magnam voluptatum'
-            ],
-            [
-                'image' => 'images/blog1.jpg',
-                'header' => 'We have been working on a big project',
-                'date' => '21 July 2020',
-                'content' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur explicabo nobis soluta praesentium deserunt magnam voluptatum'
-            ],
-        ];
-
+        $blogs = Blog::take(3)
+            ->get();
         return view( 'pages.home.index', compact('services', 'works', 'features','blogs'));
     }
 
     public function contact(){
         return view( 'pages.home.contact');
     }
+//    public function index(){
+
+//        return view('pages.services.index', compact('services'));
+//    }
 }

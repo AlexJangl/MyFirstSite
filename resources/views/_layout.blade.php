@@ -3,10 +3,10 @@
 <head>
     @include('_layouts.metas')
 
-    <title>Биллионс</title>
+    <title>@yield('title')</title>
 
     @include('_layouts.links')
-
+    @stack('styles')
 </head>
 <body>
 
@@ -17,6 +17,7 @@
     @include('_layouts.footer')
 
     @include('_layouts.scripts')
+    @stack('scripts')
 </body>
 </html>
 

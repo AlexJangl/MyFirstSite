@@ -6,14 +6,14 @@
         {{ $item->title ?? '--' }}
     </td>
     <td>
-        {{ $item->icon ?? '--' }}
+        {{ $item->price ?? '--' }}
     </td>
     <td>
-        {{ $item->description ?? '--' }}
+        {{ $item->list_of_benefits ?? '--' }}
     </td>
 
     <td class="text-center">
-        <a href = "{{ route('service.edit', $item) }}" class="text-primary mx-2" >
+        <a href = "{{ route('pricings.edit', $item) }}" class="text-primary mx-2" >
             <i class="far fa-edit"></i>
         </a>
 

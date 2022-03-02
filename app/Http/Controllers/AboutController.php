@@ -29,6 +29,6 @@ class AboutController extends Controller
                 'content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit Amet perspiciatis fuga repellendus similique quod obcaecati.'
             ],
         ];
-        return view('pages.about.about', compact('features'));
+        return view('pages.abouts.index', compact('features'));
     }
 }

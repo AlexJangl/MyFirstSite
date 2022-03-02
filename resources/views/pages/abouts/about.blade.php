@@ -20,7 +20,7 @@
             </div>
             <div class="col-md-6">
                 <div class="content-image">
-                    <img src="{{asset('images/about.png')}}" alt="" class="w-100">
+                    <img src="{{asset('images/abouts.png')}}" alt="" class="w-100">
                 </div>
             </div>
         </div>

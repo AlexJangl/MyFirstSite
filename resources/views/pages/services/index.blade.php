@@ -5,5 +5,5 @@
             <h3>Services</h3>
         </div>
     </div>
-    @include('_layouts.services')
+    @include('pages.services._service')
 @endsection

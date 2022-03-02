@@ -14,16 +14,16 @@
                     <a class="nav-link" href="{{route('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('about')}}">About</a>
+                    <a class="nav-link" href="{{route('abouts')}}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('service')}}">Services</a>
+                    <a class="nav-link" href="{{route('service.index')}}">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('pricing')}}">Pricing</a>
+                    <a class="nav-link" href="{{route('pricings.index')}}">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('blog')}}">Blog</a>
+                    <a class="nav-link" href="{{route('blogs.index')}}">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">Contact us</a>

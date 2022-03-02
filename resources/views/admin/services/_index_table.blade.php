@@ -3,23 +3,19 @@
         {{ $loop->iteration }}
     </td>
     <td>
-        {{ $item->key ?? '--' }}
+        {{ $item->title ?? '--' }}
     </td>
     <td>
-        {{ $item->title_ru ?? '--' }}
+        {{ $item->icon ?? '--' }}
     </td>
     <td>
-        {{ $item->title_ua ?? '--' }}
+        {{ $item->description ?? '--' }}
     </td>
 
     <td class="text-center">
-        <a class="text-primary mx-2" data-toggle="modal" data-target="#modal{{ $item->id }}credit">
+        <a href = "{{ route('service.edit', $item) }}" class="text-primary mx-2" >
             <i class="far fa-edit"></i>
         </a>
-        @include('admin.translations._credit_modal')
-        {{--        <a class="text-danger" data-toggle="modal" data-target="#modal{{ $item->id }}delete">--}}
-        {{--            <i class="far fa-trash-alt"></i>--}}
-        {{--        </a>--}}
-        {{--        @include('admin.categories._delete_modal')--}}
+
     </td>
 </tr>
