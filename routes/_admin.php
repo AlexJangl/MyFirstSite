@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\TranslationAdminController;
 use App\Http\Controllers\Admin\UserAdminController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\ServiceController;
 
@@ -23,6 +24,10 @@ Route::group([
     Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
 
     Route::get('/pricings', [PricingController::class, 'index'])->name('pricings.index');
+
+    Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+
+    Route::get('/videos', [BlogController::class, 'index'])->name('videos.index');
 
 
 

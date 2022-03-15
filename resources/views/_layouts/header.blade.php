@@ -26,6 +26,9 @@
                     <a class="nav-link" href="{{route('blogs.index')}}">Blog</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{route('videos.index')}}">Video</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">Contact us</a>
                 </li>
             </ul>

@@ -19,3 +19,4 @@ Route::get('/abouts', [AboutController::class, 'index'])
 Route::resource('/service', ServiceController::class);
 Route::resource('/pricings', PricingController::class);
 Route::resource('/blogs', BlogController::class);
+Route::resource('/videos', VideoController::class);

@@ -3,7 +3,7 @@
 <!-- Bootstrap 4 -->
 <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="{{ asset('admin.mdb/js/mdb.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('admin/mdb/js/mdb.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('admin/js/adminlte.min.js') }}"></script>
 <!-- Select2 -->

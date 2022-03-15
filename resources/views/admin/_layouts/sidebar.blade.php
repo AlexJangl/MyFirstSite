@@ -24,6 +24,7 @@
                     @include('admin._layouts._menu.translations', ['page_title' => 'Переводы'])
                     @include('admin._layouts._menu.services', ['page_title' => trans('trans.services')])
                     @include('admin._layouts._menu.pricings', ['page_title' => trans('trans.pricings')])
+                    @include('admin._layouts._menu.blogs', ['page_title' => trans('trans.blogs')])
                 </ul>
             </nav>
         </div>
